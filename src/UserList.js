@@ -26,7 +26,7 @@ const UserList = () => {
     return (
         <div>
             <h1>User List</h1>
-            <ul style={{listStyleType: "none"}}>
+            <ul style={{listStyleType: "none", paddingLeft: 0}}>
                 {users.map(user => (
                     <li key={user.id}>
                         <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`} />
